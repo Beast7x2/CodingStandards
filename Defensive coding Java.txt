@@ -1,0 +1,41 @@
+Input Validation
+============
+- Check for nulls
+- place your check(Guard Clause) in the beginning of your code block
+- Number value range check
+- Empty string - trim before check empty
+- Regex validation
+- Dates - use Java 8 LocalDate, LocalTime, Instant
+- Don't use string as date - use parsing
+- Throw specific exceptions like illigal Argument Exception
+- Use Enums
+- 0 division
+- Validation order
+- Fail Fast
+
+Frameworks for validation
+=====================
+Java
+- Objects.requireNonNull()
+- check out Objects class
+Google Guava
+- Preconditions.checkNotNull()
+- check out Preconditions class and Guava lib
+Apache commons
+- Validate class 
+Hibernate validator
+
+Don't mix them use only one.
+
+Method Return Values
+==================
+- Don't use magic numbers (1,0,-1)
+- Don't return null - use empty, default, Optional or throw
+
+
+- Don't provide public getters and setters for no reason
+- Use try with resources
+- Dont throw or catch general exception
+- Dont catch Nullpointer instead fix this in code
+- Dont do nothing in catch block
+

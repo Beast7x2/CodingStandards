@@ -1,0 +1,61 @@
+class name should be noun- Be specific
+Ex. commonutils.java - numutils, stringutils, timeutils
+
+variables naming
+=======
+-no abbreviations
+-boolean should be prefixed with "is"
+-use camel case
+-use ALL_CAPS with underscore for constant
+- no single letter
+
+Method Naming
+=======
+- do what 
+- to what
+ex. loadCustomerdata()
+
+Constructor
+≠=========
+Use builder pattern instead of telescopic constructors
+
+Implementing Methods
+===================
+- Avoid returning null because it may cause null pointer exception
+- Return empty instead of null
+- Avoid returing special codes (-1,0,1) instead throw custom exception
+- keep the argument count less than 4 or pass it in single object
+- Avoid flags in method - split the method
+- Avoid nested Ternery operations
+
+Handling Exceptions
+============
+- Avoid catching general exception 
+- Catch checked exception
+- Catch block shouldn't be Empty, Only have comments, Having unhelpful code
+- Log error
+- Rethrow custom exception
+- Use Try with resources 
+
+Class organization
+===============
+- SRP - Single Responsibility Principle
+- Use Private variables
+
+Coding Style
+==========
+- No tab use space
+- No wildcard imports
+- Column size is 100
+- Remove unnecessary TODO
+- Remove comment out codes
+- TODO needs to be more detailed and should be removed once done
+
+Maintain code
+===========
+- SonarLint
+- Atleast one person should review the code
+- Pair Programming
+- Code review at desk
+
+
